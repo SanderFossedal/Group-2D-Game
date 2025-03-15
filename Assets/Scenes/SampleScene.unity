@@ -385,6 +385,7 @@ GameObject:
   - component: {fileID: 1362025106}
   - component: {fileID: 1362025105}
   - component: {fileID: 1362025104}
+  - component: {fileID: 1362025107}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -538,6 +539,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1362025107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362025101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8203b8e4d630a4bb5d8753a4093741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "b\xE6sjPrefab": {fileID: 4294879419639952295, guid: 3e31de14e09a0ac41ba2a72f42492a63, type: 3}
+  spawnPosisjon: {fileID: 1362025103}
 --- !u!1 &1958090436
 GameObject:
   m_ObjectHideFlags: 0
