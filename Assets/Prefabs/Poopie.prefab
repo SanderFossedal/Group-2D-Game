@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6973335475646365346}
   - component: {fileID: 6711859757147052971}
   - component: {fileID: 933530196517854486}
-  - component: {fileID: 8203842650584763135}
   m_Layer: 0
   m_Name: Poopie
   m_TagString: Untagged
@@ -116,17 +115,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8203842650584763135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4294879419639952295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d8203b8e4d630a4bb5d8753a4093741, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "b\xE6sjPrefab": {fileID: 0}
-  spawnPosisjon: {fileID: 0}
