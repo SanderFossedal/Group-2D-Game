@@ -362,6 +362,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1831813272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &464351665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464351667}
+  - component: {fileID: 464351666}
+  m_Layer: 0
+  m_Name: StickSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &464351666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464351665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5986b0317e8cc354cbce2f37a51ff4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickPrefab: {fileID: 5056747137053633326, guid: 86794700cfa90c144b51a62ae89447f7, type: 3}
+  spawnX: 10
+  minY: -3
+  maxY: 3
+  minSpawnRate: 10
+  maxSpawnRate: 20
+--- !u!4 &464351667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464351665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.88, y: 0.04, z: 0.0328652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &472630934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,3 +1944,4 @@ SceneRoots:
   - {fileID: 2077443165}
   - {fileID: 381196616}
   - {fileID: 1797369352}
+  - {fileID: 464351667}
