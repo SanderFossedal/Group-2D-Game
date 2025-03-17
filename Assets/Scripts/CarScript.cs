@@ -5,8 +5,6 @@ public class CarScript : MonoBehaviour
     public GameObject car;
     [SerializeField]
     private float driveSpeed;
-    [SerializeField]
-    private Rigidbody2D rigidBody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

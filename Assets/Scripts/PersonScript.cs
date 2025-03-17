@@ -5,8 +5,6 @@ public class PersonScript : MonoBehaviour
     public GameObject person;
     [SerializeField]
     private float walkSpeed;
-    [SerializeField]
-    private Rigidbody2D rigidBody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
