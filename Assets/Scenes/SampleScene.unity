@@ -802,8 +802,55 @@ Transform:
   - {fileID: 1376074497}
   - {fileID: 920587207}
   - {fileID: 1831813272}
+  - {fileID: 891513231}
   m_Father: {fileID: 1681365373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &891513230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891513231}
+  - component: {fileID: 891513232}
+  m_Layer: 0
+  m_Name: CraneSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891513231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891513230}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 34.06, y: 1.1121988, z: 1.7829728}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 860792706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &891513232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891513230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2093f475d3330b4478718394bd6b611a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cranePrefab: {fileID: 281021793448172729, guid: f5c95e7ee8d756c4abfc581023542798, type: 3}
+  timeBetweenSpawn: 30.69
 --- !u!1 &920587206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,7 +2054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323daba2951007c45bd7bbe8efe592b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.08
+  scrollSpeed: 0.02
   bgRenderer: {fileID: 1958090439}
 --- !u!23 &1958090439
 MeshRenderer:

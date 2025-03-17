@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82ca78866508e940b99e676b784ee99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flightSpeed: 4
+  flightSpeed: 4.12
   flightRange: 0.2
   rigidBody: {fileID: 873191175579403287}
   highestGravity: 0.5
