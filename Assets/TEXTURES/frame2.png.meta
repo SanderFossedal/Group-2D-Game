@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8cacb526c7ff941448b6582890ab8344
+guid: 09308f01c55533c4ca116a8590dd82d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6861894420282137670
-    second: person_0
+      213: 414455529024206663
+    second: fiksfuglmikaelframe2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: person_0
+      name: fiksfuglmikaelframe2_0
       rect:
         serializedVersion: 2
-        x: 625
-        y: 0
-        width: 542
-        height: 922
+        x: 6
+        y: 29
+        width: 812
+        height: 430
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64cd62f8e985a3f50800000000000000
-      internalID: 6861894420282137670
+      spriteID: 7473fa69b1170c500800000000000000
+      internalID: 414455529024206663
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      person_0: 6861894420282137670
+      fiksfuglmikaelframe2_0: 414455529024206663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
