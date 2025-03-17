@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8983398873135947634}
   - component: {fileID: 7182017482081820575}
   - component: {fileID: 8398853027505191848}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car: {fileID: 3044692232626525791}
   driveSpeed: 8
-  rigidBody: {fileID: 7182017482081820575}
 --- !u!50 &7182017482081820575
 Rigidbody2D:
   serializedVersion: 5
@@ -148,7 +147,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -176,5 +175,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 16.8, y: 5.96}
+  m_Size: {x: 15.1, y: 4.8}
   m_EdgeRadius: 0
