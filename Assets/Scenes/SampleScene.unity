@@ -371,6 +371,7 @@ Transform:
   m_Children:
   - {fileID: 1376074497}
   - {fileID: 920587207}
+  - {fileID: 1831813272}
   m_Father: {fileID: 1681365373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920587206
@@ -742,6 +743,52 @@ Transform:
   - {fileID: 860792706}
   m_Father: {fileID: 1500608491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1831813271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1831813272}
+  - component: {fileID: 1831813273}
+  m_Layer: 0
+  m_Name: EnemyBirdSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1831813272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831813271}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.35, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 860792706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1831813273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831813271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f987f7e2559aa4281f4b8f5c7a6348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBirdPrefab: {fileID: 5846129211788917700, guid: 1772d265b2bda0749a1d08f8b8367aaa, type: 3}
+  timeBetweenSpawn: 5
 --- !u!1 &1958090436
 GameObject:
   m_ObjectHideFlags: 0
