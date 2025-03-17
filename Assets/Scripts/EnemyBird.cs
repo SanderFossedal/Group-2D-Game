@@ -4,43 +4,37 @@ public class EnemyBird : MonoBehaviour
 {
     [SerializeField]
     private float flightSpeed;
-    
+
     [SerializeField]
-    private float lowestFlightPoint;
-   
-    [SerializeField]
-    private float highestFlightPoint;
-    
+    private float flightRange; // **NEW: Defines how far the bird can move up/down from spawn**
+
     [SerializeField]
     private Rigidbody2D rigidBody;
 
     public float highestGravity;
     public float lowestGravity;
-    
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private float startY; // **NEW: Stores the bird's initial Y position**
+
     void Start()
     {
-        
+        startY = transform.position.y; // **NEW: Set starting Y position**
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3.left * flightSpeed * Time.deltaTime);
-        
-        if (transform.position.y <= lowestFlightPoint)
-        {
+        transform.position += Vector3.left * flightSpeed * Time.deltaTime;
 
+        // **NEW: Use startY to make flight range relative to each bird**
+        if (transform.position.y <= startY - flightRange)
+        {
             rigidBody.gravityScale = lowestGravity;
         }
-        if (transform.position.y >= highestFlightPoint)
+        else if (transform.position.y >= startY + flightRange)
         {
-
             rigidBody.gravityScale = highestGravity;
         }
 
-        // **NEW: Clamp vertical speed to prevent exponential growth**
         rigidBody.linearVelocity = new Vector2(rigidBody.linearVelocity.x, Mathf.Clamp(rigidBody.linearVelocity.y, -2f, 2f));
     }
 }

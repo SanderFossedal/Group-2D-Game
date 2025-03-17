@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 873191175579403287}
   - component: {fileID: 5846129211788917700}
   - component: {fileID: 4521669858771817268}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EnemyBird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,8 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flightSpeed: 4
-  lowestFlightPoint: -0.2
-  highestFlightPoint: 0.2
+  flightRange: 0.2
   rigidBody: {fileID: 873191175579403287}
   highestGravity: 0.5
   lowestGravity: -0.5
@@ -151,7 +150,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

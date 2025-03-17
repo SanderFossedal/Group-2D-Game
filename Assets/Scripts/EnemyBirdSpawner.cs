@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using NUnit.Framework;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class EnemyBirdSpawner : MonoBehaviour
 {
     public EnemyBird enemyBirdPrefab;
-    
+    public List<Transform> spawnPoints = new();
     private float time;
     public float timeBetweenSpawn;
     //Burde sikkert lage en range av spawnrates i stedet for et fixed nummer ^
@@ -28,8 +29,8 @@ public class EnemyBirdSpawner : MonoBehaviour
 
     void SpawnEnemyBird()
     {
-
-        Instantiate(enemyBirdPrefab, transform.position, Quaternion.identity);
+        Vector3 spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)].position;
+        Instantiate(enemyBirdPrefab, spawnPoint, Quaternion.identity);
         time = timeBetweenSpawn;
     }
 }
