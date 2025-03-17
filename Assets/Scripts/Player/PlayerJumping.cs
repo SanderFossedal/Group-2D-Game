@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerJump : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class PlayerJump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) // Hopper n�r mellomromstasten trykkes
         {
             Jump();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 

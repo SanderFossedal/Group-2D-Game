@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b5e86f4ae6d48e418c8daf01726b980
+guid: 700e7ccb9d1b7f84396271f83f8044d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8177045205653250831
-    second: evilBird_0
+      213: 7362440686132688866
+    second: DeathScreen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: evilBird_0
+      name: DeathScreen_0
       rect:
         serializedVersion: 2
-        x: 267
-        y: 213
-        width: 1386
-        height: 621
+        x: 478
+        y: 141
+        width: 914
+        height: 756
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fc1ab495bc458e80800000000000000
-      internalID: -8177045205653250831
+      spriteID: 2e772d0dbc4ac2660800000000000000
+      internalID: 7362440686132688866
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      evilBird_0: -8177045205653250831
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      evilBird2_0: 2249326514087649794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
