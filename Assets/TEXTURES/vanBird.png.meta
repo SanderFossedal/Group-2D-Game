@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c1ac8e6536d79eb418941481119adc0e
+guid: d00daac30fb888f4e974311d987ff355
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4585133079175223064
-    second: BUNDLESTICKS_0
+      213: -8687624367388393707
+    second: vanBird_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BUNDLESTICKS_0
+      name: vanBird_0
       rect:
         serializedVersion: 2
-        x: 395
-        y: 120
-        width: 1202
-        height: 842
+        x: 125
+        y: 29
+        width: 1750
+        height: 934
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 817d1201e3aa1af30800000000000000
-      internalID: 4585133079175223064
+      spriteID: 51f79c7baab5f6780800000000000000
+      internalID: -8687624367388393707
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BUNDLESTICKS_0: 4585133079175223064
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
