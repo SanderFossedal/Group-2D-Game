@@ -1421,7 +1421,7 @@ GameObject:
   - component: {fileID: 1362025108}
   - component: {fileID: 1362025109}
   - component: {fileID: 1362025110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,8 +2267,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 1260637015}
   - {fileID: 1362025103}
+  - {fileID: 1260637015}
   - {fileID: 1500608491}
   - {fileID: 2077443165}
   - {fileID: 381196616}
