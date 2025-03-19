@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class PoopOnHit : MonoBehaviour
 {
-    
+    private XPCounter xpCounter;
+    public GameObject xpCounterGameObject;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        xpCounter = xpCounterGameObject.GetComponent<XPCounter>();
     }
 
     // Update is called once per frame
@@ -20,8 +21,8 @@ public class PoopOnHit : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Enemies"))
         {
-            // add XP here
-            
+            // xpCounter.xp = xpCounter.xp + 1;
+
             Destroy(this.gameObject);
         }
         else
