@@ -510,7 +510,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464351665}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5986b0317e8cc354cbce2f37a51ff4e4, type: 3}
   m_Name: 
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 891513231}
   - component: {fileID: 891513232}
   m_Layer: 0
-  m_Name: CraneSpawner
+  m_Name: Crane Spawn Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891513230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2093f475d3330b4478718394bd6b611a, type: 3}
   m_Name: 
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 920587207}
   - component: {fileID: 920587208}
   m_Layer: 0
-  m_Name: PersonSpawner
+  m_Name: Person Spawn Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -986,7 +986,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920587206}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4823e5da9adc0a4bb69918cfcb21521, type: 3}
   m_Name: 
@@ -1680,7 +1680,7 @@ GameObject:
   - component: {fileID: 1376074497}
   - component: {fileID: 1376074498}
   m_Layer: 0
-  m_Name: CarSpawner
+  m_Name: Car Spawn Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376074496}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69d2f2e0f930b394f8cb273b34a16610, type: 3}
   m_Name: 
@@ -1970,6 +1970,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1681365373}
+  - component: {fileID: 1681365377}
+  - component: {fileID: 1681365376}
+  - component: {fileID: 1681365375}
+  - component: {fileID: 1681365374}
   m_Layer: 0
   m_Name: SpawnManager (DO NOT MOVE X,Y,Z)
   m_TagString: Untagged
@@ -1994,6 +1998,80 @@ Transform:
   - {fileID: 464351667}
   m_Father: {fileID: 1500608491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681365374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681365372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e866a51db2ac411438c1588775f60e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 675024601323536288, guid: f5c95e7ee8d756c4abfc581023542798, type: 3}
+  startDelay: 30
+  minSpawnTime: 20
+  maxSpawnTime: 60
+  spawnPoints:
+  - {fileID: 891513231}
+--- !u!114 &1681365375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681365372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e866a51db2ac411438c1588775f60e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7261824957684501761, guid: 1772d265b2bda0749a1d08f8b8367aaa, type: 3}
+  startDelay: 10
+  minSpawnTime: 1
+  maxSpawnTime: 5
+  spawnPoints:
+  - {fileID: 460117766}
+  - {fileID: 472630935}
+  - {fileID: 1250745334}
+--- !u!114 &1681365376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681365372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e866a51db2ac411438c1588775f60e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1695921043137161085, guid: 70e5a12fbc165e941898f9691c4a4f13, type: 3}
+  startDelay: 0
+  minSpawnTime: 1
+  maxSpawnTime: 5
+  spawnPoints:
+  - {fileID: 920587207}
+--- !u!114 &1681365377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681365372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e866a51db2ac411438c1588775f60e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3044692232626525791, guid: 7e442b1a594204149b3e4682a237b418, type: 3}
+  startDelay: 0
+  minSpawnTime: 5
+  maxSpawnTime: 10
+  spawnPoints:
+  - {fileID: 1376074497}
 --- !u!1 &1764916933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,7 +2407,7 @@ GameObject:
   - component: {fileID: 1831813272}
   - component: {fileID: 1831813273}
   m_Layer: 0
-  m_Name: EnemyBirdSpawner
+  m_Name: Enemy Bird Spawn Loactions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2360,7 +2438,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831813271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f987f7e2559aa4281f4b8f5c7a6348, type: 3}
   m_Name: 
