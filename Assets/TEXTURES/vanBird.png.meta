@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vanBird_0: -8687624367388393707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
