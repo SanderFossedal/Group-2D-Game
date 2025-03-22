@@ -1,33 +1,32 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerDeath : MonoBehaviour
 {
-    public bool PlayerIsDead = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    //public bool PlayerIsDead = false;
+
+    public UnityEvent onPlayerDeath;
+
+    //private void OnCollisionEnter2D(Collision2D enemy)
+    //{
+    //    if (enemy.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+    //    {
+    //        Death();
+    //    }
+    //}
+
+    private void Die()
     {
-        
+        onPlayerDeath?.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D enemy)
-    {
-        if (enemy.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+        //Debug purpose
+        if (Input.GetKeyDown(KeyCode.Delete))
         {
-            Death();
+            gameObject.SetActive(false);
+            Die();
         }
-    }
-
-    private void Death()
-    {
-        PlayerIsDead = true;
-        this.gameObject.SetActive(false);
-        
     }
 }
