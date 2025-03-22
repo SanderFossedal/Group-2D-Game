@@ -7,17 +7,18 @@ public class PlayerDeath : MonoBehaviour
 
     public UnityEvent onPlayerDeath;
 
-    //private void OnCollisionEnter2D(Collision2D enemy)
-    //{
-    //    if (enemy.gameObject.layer == LayerMask.NameToLayer("Enemies"))
-    //    {
-    //        Death();
-    //    }
-    //}
+    private void OnCollisionEnter2D(Collision2D enemy)
+    {
+        if (enemy.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+        {
+            Die();
+        }
+    }
 
     private void Die()
     {
         onPlayerDeath?.Invoke();
+        gameObject.SetActive(false);
     }
 
     private void Update()
@@ -25,7 +26,7 @@ public class PlayerDeath : MonoBehaviour
         //Debug purpose
         if (Input.GetKeyDown(KeyCode.Delete))
         {
-            gameObject.SetActive(false);
+
             Die();
         }
     }
