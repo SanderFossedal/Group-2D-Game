@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class PersonScript : MonoBehaviour
 {
-    public GameObject person;
+
     [SerializeField]
     private float walkSpeed;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
