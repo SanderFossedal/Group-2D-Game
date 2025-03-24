@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DeathScreen : MonoBehaviour
@@ -15,9 +16,22 @@ public class DeathScreen : MonoBehaviour
     //    }
     //}
 
+    private void Start()
+    {
+
+        
+    }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1f);  // Wait for 1 second
+        deathScreen.SetActive(true);
+        Debug.Log("1 second passed!");
+    }
+
     public void TurnOnDeathScreen()
     {
-        deathScreen.SetActive(true);
+        StartCoroutine(Delay());
+        
     }
 
     public void TurnOffDeathScreen()
