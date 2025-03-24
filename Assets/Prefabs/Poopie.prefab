@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 933530196517854486}
   - component: {fileID: 4200341817525278815}
   - component: {fileID: 4784599059715910787}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Poopie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
