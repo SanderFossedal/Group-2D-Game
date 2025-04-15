@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -27,11 +26,12 @@ public class PlayerDeath : MonoBehaviour
     private void Die()
     {
         DeadPlayerBehavior();
+        AudioManager.instance.PlaySound("PlayerDeath", transform.position);
         onPlayerDeath?.Invoke();
         gameObject.SetActive(false);
     }
 
-   private void DeadPlayerBehavior()
+    private void DeadPlayerBehavior()
     {
         deadPlayer.transform.SetParent(null); // Unparent before enabling
 
@@ -49,7 +49,7 @@ public class PlayerDeath : MonoBehaviour
         deadPlayer.SetActive(true);
     }
 
-    
+
     private void Update()
     {
         //Debug purpose

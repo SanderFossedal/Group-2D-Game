@@ -13,8 +13,9 @@ public class BæsjSpawner : MonoBehaviour
         }
     }
 
-    void SpawnBæsj()
+    public void SpawnBæsj()
     {
         Instantiate(bæsjPrefab, spawnPosisjon.position, Quaternion.identity);
+        AudioManager.instance.PlaySound("Splat", spawnPosisjon.position);
     }
 }
